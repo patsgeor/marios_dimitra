@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Μάριος &amp; Δήμητρα | 26 Ιουνίου 2027</title>
 <meta name="description" content="Το ηλεκτρονικό προσκλητήριο γάμου του Μάριου Ξενάκη και της Δήμητρας Ελένης Δημητρακέλλη. Σάββατο 26 Ιουνίου 2027, Μυτιλήνη.">
- 
+
 <meta property="og:title" content="Μάριος &amp; Δήμητρα | 26 Ιουνίου 2027">
 <meta property="og:description" content="Το ηλεκτρονικό προσκλητήριο γάμου του Μάριου Ξενάκη και της Δήμητρας Ελένης Δημητρακέλλη. Σάββατο 26 Ιουνίου 2027, Μυτιλήνη.">
 <meta property="og:type" content="website">
@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
- 
+
 <style>
   :root{
     --ivory:#FBF6EF;
@@ -36,7 +36,7 @@
 
   *,*::before,*::after{box-sizing:border-box;}
   html{scroll-behavior:smooth;}
-  body{ 
+  body{
     margin:0;
     background:var(--ivory);
     color:var(--ink);
@@ -189,7 +189,7 @@
   }
   .site-nav a:hover::after,.site-nav a:focus-visible::after{width:100%;left:0;}
 
-  @media (min-width:900px){
+  @media (min-width:1040px){
     .nav-toggle{display:none;}
     .site-nav{
       position:fixed;inset:auto;top:0;left:0;right:0;
@@ -206,18 +206,23 @@
       background:rgba(251,246,239,0.85);
       backdrop-filter:blur(8px);
       border:1px solid var(--line);
-      border-radius:40px;
-      padding:12px 30px;
+      border-radius:28px;
+      padding:12px clamp(16px, 2.6vw, 30px);
       display:flex;
-      gap:30px;
+      flex-wrap:wrap;
+      justify-content:center;
+      row-gap:8px;
+      column-gap:clamp(12px, 2vw, 30px);
+      max-width:min(92vw, 980px);
+      box-sizing:border-box;
       box-shadow:0 6px 24px rgba(58,52,44,0.06);
       transition:transform .5s ease, opacity .5s ease;
     }
     .desktop-nav.hide{transform:translate(-50%,-140%);opacity:0;}
     .desktop-nav a{
       font-family:var(--sans);
-      font-size:11px;
-      letter-spacing:.16em;
+      font-size:clamp(9.5px, 0.95vw, 11px);
+      letter-spacing:.14em;
       text-transform:uppercase;
       text-decoration:none;
       color:var(--ink-soft);
@@ -228,7 +233,7 @@
     .desktop-nav a:hover,.desktop-nav a:focus-visible{color:var(--gold);}
     .mobile-only-nav{display:none;}
   }
-  @media (max-width:899px){
+  @media (max-width:1039px){
     .desktop-nav{display:none;}
   }
 
@@ -800,7 +805,7 @@
   <a href="#mystirio">Μυστήριο</a>
   <a href="#dexiosi">Δεξίωση</a>
   <a href="#oikogeneies">Οι οικογένειές μας</a>
-  <a href="#rsvp">RSVP</a>
+  <a href="#rsvp">Επιβεβαίωση παρουσίας</a>
   <a href="#doro">Δώρο</a>
   <a href="#epikoinonia">Επικοινωνία</a>
 </nav>
@@ -811,7 +816,7 @@
     <li><a href="#mystirio" class="nav-link">Μυστήριο</a></li>
     <li><a href="#dexiosi" class="nav-link">Δεξίωση</a></li>
     <li><a href="#oikogeneies" class="nav-link">Οι οικογένειές μας</a></li>
-    <li><a href="#rsvp" class="nav-link">RSVP</a></li>
+    <li><a href="#rsvp" class="nav-link">Επιβεβαίωση παρουσίας</a></li>
     <li><a href="#doro" class="nav-link">Δώρο</a></li>
     <li><a href="#epikoinonia" class="nav-link">Επικοινωνία</a></li>
   </ul>
@@ -986,7 +991,7 @@
       <div class="rsvp-intro">
         <p class="eyebrow reveal">Επιβεβαίωση παρουσίας</p>
         <h2 class="section-title reveal reveal-delay-1">Θα είστε μαζί μας;</h2>
-        <p class="rsvp-text reveal reveal-delay-1">Παρακαλούμε επιβεβαιώστε την παρουσία σας έως τις 30 Απριλίου 2027, ώστε να οργανώσουμε τη μέρα μας με τον καλύτερο τρόπο.</p>
+        <p class="rsvp-text reveal reveal-delay-1">Παρακαλούμε επιβεβαιώστε την παρουσία σας έως τις 30 Μαίου 2027, ώστε να οργανώσουμε τη μέρα μας με τον καλύτερο τρόπο.</p>
       </div>
 
       <form class="rsvp-form reveal reveal-delay-2" id="rsvpForm" novalidate>
